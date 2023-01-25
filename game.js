@@ -49,7 +49,6 @@ class Game {
 
             // HERO
 
-            setInterval
             
             this.blueballs.forEach(function (balls) {
                 balls.draw()
