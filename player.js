@@ -40,6 +40,6 @@ class Enemy {
     this.bulletspeedx += 20*this.a
     }
     movements(){
-    if (frameCount % (60/this.a) ==0)  this.y = 340 + 200*Math.floor(Math.random()*2)
+    if (frameCount % (60/(1+this.a*2)) == 0)  this.y = 340 + 200*Math.floor(Math.random()*2)
     }
 } 
