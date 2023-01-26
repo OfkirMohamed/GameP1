@@ -51,22 +51,25 @@ function keyPressed(){
 }
 
 document.querySelector("#easy").addEventListener("click", function(){
-    setTimeout(()=>{    game.a = 2
-        game.player.health = 100
+    setTimeout(()=>{    
+        game.a = 2
+        game.player.health = 180
         game.enemy.health = 100
-        game.start=1}, 1000)
+        game.start=1}, 1200)
 
 })
 
 document.querySelector("#medium").addEventListener("click", function(){
+    setTimeout(()=>{    
     game.a = 3
-    game.player.health = 100
+    game.player.health = 180
     game.enemy.health = 120
-    game.start=1
+    game.start=1}, 1200)
 })
 document.querySelector("#hard").addEventListener("click", function(){
-    game.a = 4
-    game.player.health = 100
-    game.enemy.health = 150
-    game.start=1
+    setTimeout(()=>{    
+    game.a = 5
+    game.player.health = 180
+    game.enemy.health = 200
+    game.start=1}, 1200)
 })
