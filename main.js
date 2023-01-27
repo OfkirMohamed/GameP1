@@ -4,21 +4,6 @@ let a = document.querySelector("#diff")
 let timer = 0
 
 
-// document.querySelector("#easy").addEventListener("click", function(){
-//     difficulty = 2
-//     a.innerText = "easy"
-//     stop()
-// })
-// document.querySelector("#medium").addEventListener("click", function(){
-//     difficulty = 2.5
-//     a.innerText = "medium"
-
-// })
-// document.querySelector("#hard").addEventListener("click", function(){
-//     difficulty = 3
-//     a.innerText = "hard"
-// })
-
 
 const game = new Game(difficulty)
 
@@ -61,7 +46,7 @@ document.querySelector("#easy").addEventListener("click", function(){
 
 document.querySelector("#medium").addEventListener("click", function(){
     setTimeout(()=>{    
-    game.a = 3
+    game.a = 3,5
     game.player.health = 180
     game.enemy.health = 120
     game.start=1}, 1200)
